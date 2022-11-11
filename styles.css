@@ -1,0 +1,208 @@
+
+@font-face {
+    font-family: Or Lemmen Light;
+    src: url(assets/OrLemmen-Light.otf);
+}
+
+@font-face {
+    font-family: Or Lemmen Regular;
+    src: url(assets/OrLemmen-Regular.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Or Lemmen Thin Italic;
+    src: url(assets/OrLemmen-ThinItalic.otf);
+    font-style: italic;
+}
+
+@font-face {
+  font-family: Or Lemmen Thin;
+  src: url(assets/OrLemmen-Thin.otf);
+}
+
+@font-face {
+    font-family: Aktiv-Grotesk Bold;
+    src: url(assets/AktivGrotesk-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+  font-family: Aktiv-Grotesk Light;
+  src: url(assets/AktivGrotesk-Light.otf);
+}
+@font-face {
+  font-family: Aktiv-Grotesk Light Italic;
+  src: url(assets/AktivGrotesk-LightItalic.otf);
+}
+@font-face {
+  font-family: Aktiv-Grotesk Regular;
+  src: url(assets/AktivGrotesk-Regular.otf);
+}
+@font-face {
+  font-family: Aktiv-Grotesk Thin;
+  src: url(assets/AktivGrotesk-Thin.otf);
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+   margin:0;
+   padding:0;
+}
+
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Aktiv-Grotesk Bold;
+    position: relative;
+    /* border: 2px solid yellow; */
+  }
+
+h1{
+    font-family: Or Lemmen Regular;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+    
+}
+
+h2{
+    font-family: Or Lemmen Light;
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 10px;
+    color: white;
+}
+
+h3 {
+    position: absolute;
+    font-size: 18vw;
+    color: white;
+    bottom: 0;
+    left: 0;
+    /* border: 2px solid red; */
+    line-height: 0.6;
+    margin: 0;
+    white-space: nowrap;
+    }
+    
+.italic {
+    font-family: Or Lemmen Thin Italic;
+    font-style: italic;
+}
+
+.title {
+    display: flex;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 0;
+    /* border: 2px solid red; */
+}
+
+
+p {
+position: absolute;
+font-family: Aktiv-Grotesk Regular;
+font-size: 10vw;
+color: white;
+bottom: 0;
+right: 0;
+text-align: right;
+/* border: 2px solid red; */
+margin: 0;
+white-space: nowrap;
+line-height: 0.7;
+}
+
+.arrowbtn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    /* left: 50%;
+    line-height: 100px; */
+    margin-top: 30px;
+    margin-right: 35px;
+    transition: all 0.25s ease-in-out;
+    z-index: 1;
+  }
+  .arrowbtn:hover {
+    background: white;
+    border-color: white;
+    color: #111;
+  }
+  .arrowbtn:after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 12.5px;
+    height:12.5px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .arrowbtn-down {
+    right: 0;
+  }
+  .arrowbtn-down:after {
+    margin-left: -6.25px;
+    margin-top: -9.5px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotateZ(45deg);
+  }
+
+  .arrowbtn-up {
+    right: 0;
+  }
+  .arrowbtn-up:after {
+    margin-left: -6.25px;
+    margin-top: -4.5px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotateZ(-135deg);
+  }
+
+  /* scroll bar */
+
+  /* .scrollbar {
+    position: relative;
+    z-index: 1;
+  }
+.bar {
+    position: fixed;
+    width: 0vw;
+    height: 85vh;
+    margin-left: 35px;
+    top: 50%;
+    border: 3px solid #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.bar::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 0px;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 100%);
+} */
+
+
